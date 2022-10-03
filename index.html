@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         
+        
+        <!-- Highscores -->
+        <section>
+            <a href="highscores.html">
+                <button class="scores-header" id="view-highscores">View High Scores</button>
+            </a>
+        
+         
+        </section>
+
+        
+        
+        <!-- Timer -->
+        <section class="timer">
+            <p>
+                Time: 
+                <span id="timer">0</span>
+            </p>
+        </section>
+        </header>
+
+        <main class="quiz-container">
+            <div class="quiz-beginning-class" id="quiz-beginning">
+                <div class="landing" id="start-screen">
+                    <h1 class="coding-h1">Coding Quiz</h1>
+                    <p>
+                        Try to answer the following code-related questions 
+                        <br>
+                        within the time limit. Keep in mind that incorrect 
+                        <br>
+                        answers will penalize your score/time by ten seconds!
+                    </p>
+                    <button id="start-button">Start Quiz</button>
+                </div>
+            </div>
+            <div class="hide" id="questions">
+                <h2 id="question-text"></h2>
+                <div class="options" id="options"></div>
+            </div>
+            <div class="hide" id="quiz-end">
+                <h2>Completed Quiz!</h2>
+                <p>Congrats! Your final score is:
+                <span id="score-final"></span>
+                </p>
+
+                <p>
+                    Please enter your name:
+                    <input type="text" id="name" max="3">
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+        </main>
+        <script src="index.js"></script>
+</body>
+</html>
