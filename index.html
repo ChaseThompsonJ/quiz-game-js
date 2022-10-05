@@ -11,13 +11,11 @@
     <header>
          
         
-        <!-- Highscores -->
+        <!-- Highscores Link -->
         <section>
             <a href="highscores.html">
                 <button class="scores-header" id="view-highscores">View High Scores</button>
             </a>
-        
-         
         </section>
 
         
@@ -26,11 +24,12 @@
         <section class="timer">
             <p>
                 Time: 
-                <span id="timer">0</span>
+                <span id="timeclock">0</span>
             </p>
         </section>
         </header>
 
+        <!-- Landing -->
         <main class="quiz-container">
             <div class="quiz-beginning-class" id="quiz-beginning">
                 <div class="landing" id="start-screen">
@@ -45,11 +44,41 @@
                     <button id="start-button">Start Quiz</button>
                 </div>
             </div>
+            
+            <!-- Insert Questions Here -->
             <div class="hide" id="questions">
-                <h2 id="question-text"></h2>
-                <div class="options" id="options"></div>
+                <h2 id="question-text">What is your name?</h2>
+                <div class="options" id="options1">Brad</div>
+                <div class="options" id="options2">Chad</div>
+                <div class="options" id="options3">Tom</div>
+                <div class="options" id="options4">Chase</div>
             </div>
+            <div class="hide" id="questions2">
+                <h2 id="question-text">What is your name?</h2>
+                <div class="options" id="options1">Brad</div>
+                <div class="options" id="options2">Chad</div>
+                <div class="options" id="options3">Tom</div>
+                <div class="options" id="options4">Chase</div>
+            </div>
+            <div class="hide" id="questions3">
+                <h2 id="question-text">What is your name?</h2>
+                <div class="options" id="options1">Brad</div>
+                <div class="options" id="options2">Chad</div>
+                <div class="options" id="options3">Tom</div>
+                <div class="options" id="options4">Chase</div>
+            </div>
+            <div class="hide" id="questions4">
+                <h2 id="question-text">What is your name?</h2>
+                <div class="options" id="options1">Brad</div>
+                <div class="options" id="options2">Chad</div>
+                <div class="options" id="options3">Tom</div>
+                <div class="options" id="options4">Chase</div>
+            </div>
+            
+            
+            <!-- Completed / Enter Name Section -->
             <div class="hide" id="quiz-end">
+                
                 <h2>Completed Quiz!</h2>
                 <p>Congrats! Your final score is:
                 <span id="score-final"></span>
@@ -60,7 +89,10 @@
                     <input type="text" id="name" max="3">
                     <button id="submit-score">Submit</button>
                 </p>
+            
             </div>
+        
+        
         </main>
         <script src="index.js"></script>
 </body>
